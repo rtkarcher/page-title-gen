@@ -4,5 +4,5 @@ $parts = explode('/', $currentFile);
 $parts = $parts[count($parts) - 1];
 $name = explode('.', $parts);
 unset ($name[count($name) - 1]);
-$pageName = implode('.',$name);
+$pageName = ucwords(implode('.',$name));
 ?>
